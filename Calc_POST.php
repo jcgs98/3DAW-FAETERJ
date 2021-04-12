@@ -2,12 +2,12 @@
 	include("Calc_POST.html");
 	$x 	= $_POST['x'];
 	$y 	= $_POST['y'];
-	$op = $_POST['operacao'];
+	$op	= $_POST['operacao'];
 
 	if(!is_numeric($x) || !is_numeric($y) || empty($op))
 	{
 		echo "<font size='5'><strong>Erro! Existem campos vazios.</strong></font> ";
-    }
+    	}
 	
 	else if ((!$y)&&($op =="/")||(!$y)&&($op =="%"))
 	{
